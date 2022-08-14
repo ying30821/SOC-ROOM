@@ -11,8 +11,12 @@
       </h2>
     </template>
     <div class="flex justify-between mb-4">
-      <p>Duration: {{ actionDetail.duration }}</p>
-      <p>Score: {{ actionDetail.score }} pts</p>
+      <p>
+        Duration:<span class="text-medium ml-1">{{ actionDetail.duration }} minutes</span>
+      </p>
+      <p>
+        Score:<span class="text-medium ml-1">{{ actionDetail.score }} pts</span>
+      </p>
     </div>
     <div class="text-center mb-4">
       <el-tag :disable-transitions="true" round size="small">
@@ -22,7 +26,7 @@
     <p class="mb-4">{{ actionDetail.depiction }}</p>
     <p class="mb-4">Related dashboard: Web Access</p>
     <p class="text-gray text-xs">Notice: There may be more than one answer. You can submit any of it.</p>
-    <el-divider class="my-4"/>
+    <el-divider/>
     <el-form
       :model="formData"
       label-position="top"
@@ -90,6 +94,9 @@ const handleCloseModal = () => {
   &:deep(.el-input__wrapper) {
     display: flex;
   }
+}
+.text-medium {
+  font-weight: 500;
 }
 .tag {
   position: relative;

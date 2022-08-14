@@ -1,19 +1,19 @@
 <template>
-<div>
-  <el-container>
-    <el-aside width="64px">
-      <SideBar/>
-    </el-aside>
+  <div>
     <el-container>
-      <el-header class="p-0">
-        <NavBar/>
-      </el-header>
-      <el-main>
-        <router-view/>
-      </el-main>
+      <el-aside width="64px">
+        <SideBar/>
+      </el-aside>
+      <el-container>
+        <el-header class="p-0">
+          <NavBar/>
+        </el-header>
+        <el-main>
+          <router-view/>
+        </el-main>
+      </el-container>
     </el-container>
-  </el-container>
-</div>
+  </div>
 </template>
 
 <script setup>
@@ -32,5 +32,4 @@ aside {
   top: 0;
   height: 100vh;
 }
-
 </style>

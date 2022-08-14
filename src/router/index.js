@@ -35,7 +35,7 @@ router.beforeEach((to) => {
     }
   }
   if (to.meta.title) {
-    document.title = `${to.meta.title} | SOC Room`;
+    document.title = `${ to.meta.title } | SOC Room`;
   }
 })
 

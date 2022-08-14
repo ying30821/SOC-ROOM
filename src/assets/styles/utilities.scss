@@ -19,10 +19,6 @@
 }
 
 @for $i from 0 through 10 {
-  .my-#{$i} {
-    margin-top: 4px * $i;
-    margin-bottom: 4px * $i;
-  }
   .mb-#{$i} {
     margin-bottom: 4px * $i;
   }

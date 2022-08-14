@@ -211,7 +211,6 @@ const handleOpenModel = (index) => {
   &-tag {
     color: #fff;
     border: 0;
-    // width: 15%;
     margin-right: 20px;
   }
 }
